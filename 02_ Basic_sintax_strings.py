@@ -1,4 +1,4 @@
-#Atividade 02 - Sintaxe Básica
+#Atividade 02 - Sintaxe Básica: Strings
 
 #Exercício 1
 print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')

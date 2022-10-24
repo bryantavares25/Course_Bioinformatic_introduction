@@ -1,6 +1,8 @@
-#Atividade 3 - Sintaxe básica
+#Atividade 3 - Sintaxe básica: Tuples
 
 #Exercício 1
+print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')
+
 aa_01 = ('A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y')
 
 print(aa_01)

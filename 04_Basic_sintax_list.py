@@ -17,5 +17,13 @@ for i in pot_ncbi_id:
 
 print(f'\nElemento na posição 10 da lista: {ncbi_id[10]}')
 
-print(f'Inserindo os itens x na lista do NCBI... Carregando...')
+print(f'Inserindo o itens AAY66967.1 na lista do NCBI... Carregando...')
+ncbi_id.insert(11, 'AAY66967.1')
 
+print(f'Inserindo o itens AAY66967.1 na lista do NCBI... Carregando...')
+ncbi_id.insert(21, 'AAY66880.1')
+
+print(f'Inserindo o itens AAY66967.1 na lista do NCBI... Carregando...')
+ncbi_id.insert(16, 'AAY66874.1')
+
+print(ncbi_id[11])

@@ -1,4 +1,4 @@
-#Atividade 3 - Sintaxe básica: Tuples
+#Atividade 3 - Sintaxe básica: Lists
 
 #Exercício 1
 print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')
@@ -26,4 +26,10 @@ ncbi_id.insert(21, 'AAY66880.1')
 print(f'Inserindo o itens AAY66967.1 na lista do NCBI... Carregando...')
 ncbi_id.insert(16, 'AAY66874.1')
 
-print(ncbi_id[11])
+print(f'\nRetirar elemento {ncbi_id[8]} da lista... Carregando... ')
+ncbi_id.pop(8)
+
+print(ncbi_id)
+
+#Exercício 2
+print('\n', '-'*15, 'Exercício 2', '-'*15, '\n')

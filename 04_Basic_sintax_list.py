@@ -1,4 +1,4 @@
-#Atividade 3 - Sintaxe básica: Lists
+#Atividade 4 - Sintaxe básica: Lists
 
 #Exercício 1
 print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')

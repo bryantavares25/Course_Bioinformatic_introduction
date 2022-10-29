@@ -1,0 +1,1 @@
+#Atividade 6 - Sintaxe básica: Dictionaries

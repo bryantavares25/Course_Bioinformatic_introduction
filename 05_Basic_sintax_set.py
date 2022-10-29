@@ -1,9 +1,6 @@
 #Atividade 5 - Sintaxe básica: Sets
 
 #Exercício 1
-from asyncio import queues
-
-
 print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')
 
 f1 = {1.9, 1.8, 5.7, 1.6, 5.8, 1.7, 9.6, 5.9, 9.5, 6.5, 6.2, 1.1, 4.4, 3.5, 2.9, 4.7,4.6, 5.2, 5.3}

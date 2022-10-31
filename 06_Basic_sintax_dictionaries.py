@@ -16,4 +16,4 @@ print(f'\nOs valores do dicionário: {pdb.values()}')
 
 print(f'\nOs itens do dicionário: {pdb.items()}')
 
-# Rm 11:36 <º)))>< B. A. R. T.
+# B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

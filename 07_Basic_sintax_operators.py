@@ -48,9 +48,17 @@ print(f'O quociente inteiro da divisão de {n1} por {n2}: {n1//n2}')
 print('\n', '-'*15, 'Exercício 6', '-'*15, '\n')
 
 seqbio = 5
-seqbiover = seqbio <= 5 or seqbio >= 30
+seqbiover = seqbio <=5 or seqbio >= 30
 
-print(f'A sequência tem tamanho entre 5 e 30: {seqbiover}')
+print(f'A sequência tem tamanho entre [5, 30]: {seqbiover}')
+
+#Exercício 7
+print('\n', '-'*15, 'Exercício 7', '-'*15, '\n')
+
+seqbio = 5
+seqbiover = seqbio < 5 or seqbio >= 30
+
+print(f'A sequência tem tamanho entre (5,30]: {seqbiover}')
 
 #Exercício 8
 print('\n', '-'*15, 'Exercício 8', '-'*15, '\n')
@@ -66,13 +74,9 @@ print('\n', '-'*15, 'Exercício 9', '-'*15, '\n')
 pos = ['H', 'K', 'R']
 neg =['D', 'E']
 
-a = 'H'
+aa = 'H'
 
-if a in pos:
-    print('O aminoácido é carregado positivamente.')
-elif a in neg:
-    print('O aminoácido é carregado negativamente.')
-else:
-    print('O aminoácido não é carregado.')
+print(f'O aminoácido {aa} é carragado? {aa in pos or aa in neg}')
+print(f'O aminoácido {aa} é neutro? {(not aa in pos) and (not aa in neg)}')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

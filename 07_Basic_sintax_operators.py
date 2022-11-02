@@ -39,4 +39,40 @@ nt = 0 == n1%n2
 
 print(f'O número {n1} é divisível por {n2}: {nt}')
 
+#Exercício 5
+print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
+
+print(f'O quociente inteiro da divisão de {n1} por {n2}: {n1//n2}')
+
+#Exercício 6
+print('\n', '-'*15, 'Exercício 6', '-'*15, '\n')
+
+seqbio = 5
+seqbiover = seqbio <= 5 or seqbio >= 30
+
+print(f'A sequência tem tamanho entre 5 e 30: {seqbiover}')
+
+#Exercício 8
+print('\n', '-'*15, 'Exercício 8', '-'*15, '\n')
+
+aalist = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
+letter = 'Z'
+
+print(f'O aminoácido {letter} está presente na lista {aalist}: {letter in aalist}')
+
+#Exercício 9
+print('\n', '-'*15, 'Exercício 9', '-'*15, '\n')
+
+pos = ['H', 'K', 'R']
+neg =['D', 'E']
+
+a = 'H'
+
+if a in pos:
+    print('O aminoácido é carregado positivamente.')
+elif a in neg:
+    print('O aminoácido é carregado negativamente.')
+else:
+    print('O aminoácido não é carregado.')
+
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

@@ -36,6 +36,17 @@ print(f'O RMSD entre os dois resíduos de glicina é: {raiz}')
 #Exercício 2
 print('\n', '-'*15, 'Exercício 2', '-'*15, '\n')
 
+#Sequências
+seqa = 'ATGATCTCGTAATTAACCGGAATTTTGGGCC'
+seqb = 'GGCCTTAAGTTTAACCCGGAATTTAAAGGCCCCAAA'
+
+#Guanina/Citosina
+gca = ((seqa.count('G') + seqa.count('C')) * 100) / len(seqa)
+gcb = ((seqb.count('G') + seqb.count('C')) * 100) / len(seqb)
+
+#Imprimindo
+print(f'Sequência A: {seqa} \n {gca}% de conteúdo GC. \n')
+print(f'Sequência B: {seqb} \n {gcb}% de conteúdo GC. \n')
 
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

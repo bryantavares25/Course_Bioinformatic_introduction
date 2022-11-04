@@ -1,4 +1,4 @@
-#Atividade 7 - Sintaxe básica: Operadores
+#Atividade 8 - Sintaxe básica: Operadores
 
 import math
 
@@ -47,6 +47,5 @@ gcb = ((seqb.count('G') + seqb.count('C')) * 100) / len(seqb)
 #Imprimindo
 print(f'Sequência A: {seqa} \n {gca}% de conteúdo GC. \n')
 print(f'Sequência B: {seqb} \n {gcb}% de conteúdo GC. \n')
-
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

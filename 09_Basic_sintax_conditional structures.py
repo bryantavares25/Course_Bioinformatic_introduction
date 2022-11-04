@@ -14,12 +14,34 @@ else:
 #Exercício 2
 print('\n', '-'*15, 'Exercício 2', '-'*15, '\n')
 
-'''Considere que peptídeos são cadeias formadas por 2 ou mais aminoácidos e não mais que 50
-aminoácidos. Dada uma sequência qualquer, verifique se é ou não um peptídeo considerando a definição
-de peptídeo aqui apresentada.'''
-
 seq1 = 'ARFGTYUI'
 
+if len(seq1) <= 50 and len(seq1) >=2:
+    print(f'{seq1}\n\n > A sequência é um peptídeo')
+else:
+    print(f'{seq1}\n\n > A sequência não é um peptídeo')
 
+#Exercício 3
+print('\n', '-'*15, 'Exercício 3', '-'*15, '\n')
+
+'''Considere agora que peptídeos podem ser divididos em:
+• 2 aminoácidos: Dipeptídeo
+• 3 aminoácidos: Tripeptídeo
+• 4 ou mais aminoácidos (com até 50 aminoácidos): Polipeptídeo
+Imprima se é um peptídeo e a denominação adequada.'''
+
+seq2 = 'WWWMNBVCXZHJKKLASLIUYTREWQERTYUIOPASDFGHJKKLASL'
+lenseq2 = len(seq2)
+
+if lenseq2 <= 50 and lenseq2 >= 2:
+    print(f'{seq2}\n\n> Sequência é um peptídeo:', end='')
+    if lenseq2 == 2:
+        print(' Dipeptídeo.')
+    elif lenseq2 == 3:
+        print(' Tripeptídeo.')
+    else:
+        print(' Polipeptídeo.')
+else:
+    print(f'{seq2}\n\n > Sequência não é um peptídeo.')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

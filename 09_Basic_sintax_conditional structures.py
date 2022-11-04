@@ -77,7 +77,21 @@ elif newaa not in carregado:
 else:
     print(f'O aminoácido {newaa} é polar ou carregado.')
 
+#Exercício 6
+print('\n', '-'*15, 'Exercício 6', '-'*15, '\n')
 
+pur = ['A', 'G']
+pir = ['C', 'T']
 
+nucl = input('Digite um nucleotídeo: ')
+
+if (nucl in pur) or (nucl in pir):
+    print(f'{nucl} é um nucleotídeo: ', end='')
+    if nucl in pur:
+        print('Pertence a classe de purinas.\n')
+    else:
+        print('Pertence a classe das pirimidinas.\n')
+else:
+    print(f'{nucl} não é um nucleotídeo.')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

@@ -68,8 +68,15 @@ print(f'Enxofre: {aa in enxofre}')
 #Exercício 5
 print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
 
-'''Considerando as classes de aminoácidos da questão anterior, defina e imprima se um aminoácido é
-apolar ou tem carga neutra (não é carregado)'''
+newaa = input('Aminoácido: ')
+
+if newaa not in polar:
+    print(f'O aminoácido {newaa} é apolar.')
+elif newaa not in carregado:
+    print(f'O aminoácido {newaa} é neutro.')
+else:
+    print(f'O aminoácido {newaa} é polar ou carregado.')
+
 
 
 

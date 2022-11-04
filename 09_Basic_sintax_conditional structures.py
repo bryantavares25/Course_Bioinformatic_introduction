@@ -24,12 +24,6 @@ else:
 #Exercício 3
 print('\n', '-'*15, 'Exercício 3', '-'*15, '\n')
 
-'''Considere agora que peptídeos podem ser divididos em:
-• 2 aminoácidos: Dipeptídeo
-• 3 aminoácidos: Tripeptídeo
-• 4 ou mais aminoácidos (com até 50 aminoácidos): Polipeptídeo
-Imprima se é um peptídeo e a denominação adequada.'''
-
 seq2 = 'WWWMNBVCXZHJKKLASLIUYTREWQERTYUIOPASDFGHJKKLASL'
 lenseq2 = len(seq2)
 
@@ -43,5 +37,40 @@ if lenseq2 <= 50 and lenseq2 >= 2:
         print(' Polipeptídeo.')
 else:
     print(f'{seq2}\n\n > Sequência não é um peptídeo.')
+
+#Exercício 4
+print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
+
+hidrofobico = ['I', 'V', 'L', 'M', 'C', 'A', 'T', 'F', 'Y', 'W', 'H', 'K']
+pequeno = ['P', 'A', 'G', 'C', 'S', 'T', 'D', 'N', 'V']
+polar = ['C', 'S', 'T', 'N', 'D', 'Q', 'Y', 'W', 'H', 'K', 'R', 'E']
+carregado = ['D', 'E', 'R', 'K', 'H']
+aromatico = ['F', 'Y', 'W', 'H']
+minusculo = ['A', 'C', 'G', 'S']
+alifatico = ['I', 'L', 'V']
+hidroxila = ['T', 'S']
+acido = ['N', 'Q']
+enxofre = ['C', 'M']
+
+aa = input('Aminoácido: ')
+
+print(f'Hidrofóbico: {aa in hidrofobico}')
+print(f'Pequeno: {aa in pequeno}')
+print(f'Polar: {aa in polar}')
+print(f'Carregado: {aa in carregado}')
+print(f'Aromático: {aa in aromatico}')
+print(f'Minúsculo: {aa in minusculo}')
+print(f'Alifático: {aa in alifatico}')
+print(f'Hidroxila: {aa in hidroxila}')
+print(f'Ácido: {aa in acido}')
+print(f'Enxofre: {aa in enxofre}')
+
+#Exercício 5
+print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
+
+'''Considerando as classes de aminoácidos da questão anterior, defina e imprima se um aminoácido é
+apolar ou tem carga neutra (não é carregado)'''
+
+
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

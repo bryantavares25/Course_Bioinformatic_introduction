@@ -51,9 +51,14 @@ print(f'A maior sequência é: {m}')
 #Exercício 5
 print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
 
+lseqa = len(SeqA)
+lseqb = len(SeqB)
+lseqc = len(SeqC)
 
+lsort = [lseqa, lseqb, lseqc]
 
-''' 5. Imprima as três sequências em ordem crescente de tamanho'''
+print(f'Sequênciais em ordem de tamanho: {lsort.sort()}.')
+
 
 
 

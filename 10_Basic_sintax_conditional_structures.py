@@ -38,12 +38,22 @@ for n in lseq:
 #Exercício 4
 print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
 
+maior = 'A'
+
+for n in lseq:
+    if  len(n) > len(maior):
+        m = n
+    else:
+        n = n
+
+print(f'A maior sequência é: {m}')
+
+#Exercício 5
+print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
 
 
-print('Fim')
 
-''' 4. Identifique e imprima a maior dentre as três sequências a seguir.
-5. Imprima as três sequências em ordem crescente de tamanho'''
+''' 5. Imprima as três sequências em ordem crescente de tamanho'''
 
 
 

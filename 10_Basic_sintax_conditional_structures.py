@@ -18,7 +18,7 @@ for n in lseq:
 #Exercício 2
 print('\n', '-'*15, 'Exercício 2', '-'*15, '\n')
 
-med = ((SeqA+SeqB+SeqC)/3)
+med = ((len(SeqA)+len(SeqB)+len(SeqC))/3)
 
 for n in lseq:
     if len(n) >= med:
@@ -26,12 +26,23 @@ for n in lseq:
     else:
         print('Sequência é menor que o tamanho médio das sequências.\n')
 
+#Exercício 3
+print('\n', '-'*15, 'Exercício 3', '-'*15, '\n')
+
+for n in lseq:
+    if 'H' in n and 'P' not in n:
+        print(f'Sequência com Histidina e sem Prolina:\n> {n}\n')
+    else:
+        print('Sequência sem Histidina e/ou com Prolina.\n')
+
+#Exercício 4
+print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
+
+
+
 print('Fim')
 
-'''Imprima apenas as sequências com 80 ou mais aminoácidos.
-2. Imprima apenas as sequências cujo tamanho seja maior que a média de tamanho das sequências.
-3. Imprima apenas as sequências que possuam pelo menos uma histidina (H) e nenhuma prolina (P).
-4. Identifique e imprima a maior dentre as três sequências a seguir.
+''' 4. Identifique e imprima a maior dentre as três sequências a seguir.
 5. Imprima as três sequências em ordem crescente de tamanho'''
 
 

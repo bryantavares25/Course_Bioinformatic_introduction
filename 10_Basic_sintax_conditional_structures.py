@@ -38,29 +38,34 @@ for n in lseq:
 #Exercício 4
 print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
 
-maior = 'A'
+maior = ''
 
 for n in lseq:
     if  len(n) > len(maior):
-        m = n
+        maior = n
     else:
         n = n
 
-print(f'A maior sequência é: {m}')
+print(f'A maior sequência é: {maior}')
 
 #Exercício 5
 print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
 
-lseqa = len(SeqA)
-lseqb = len(SeqB)
-lseqc = len(SeqC)
+ordem1 = ''
+ordem2 = ''
+ordem3 = ''
 
-lsort = [lseqa, lseqb, lseqc]
+for n in lseq:
+    if  len(n) > len(ordem3):
+        ordem3 = n
+    
+    if len(n) > len(ordem2):
+        ordem2 = n
+    
+    if len(n) > len(ordem1):
+        ordem1 = n
 
-print(f'Sequênciais em ordem de tamanho: {lsort.sort()}.')
 
-
-
-
+print(f'Sequênciais em ordem de tamanho:\n{ordem1} \n{ordem2} \n{ordem3}')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

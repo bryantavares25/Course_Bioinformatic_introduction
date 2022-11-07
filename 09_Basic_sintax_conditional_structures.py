@@ -1,4 +1,4 @@
-#Atividade 8 - Sintaxe básica: Operadores
+#Atividade 9 - Sintaxe básica: Estruturas condicionais
 
 #Exercício 1
 print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')

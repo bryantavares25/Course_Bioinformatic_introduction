@@ -38,34 +38,41 @@ for n in lseq:
 #Exercício 4
 print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
 
-maior = ''
-
-for n in lseq:
-    if  len(n) > len(maior):
-        maior = n
-    else:
-        n = n
-
-print(f'A maior sequência é: {maior}')
+if len(SeqA)>len(SeqB) and len(SeqA)>len(SeqB):
+    print('SeqA é a maior sequência.')
+elif len(SeqB)>len(SeqA) and len(SeqB)>len(SeqC):
+    print('SeqB é a maior sequência.')
+else:
+    print('SeqC é a maior sequência.')
 
 #Exercício 5
 print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
 
-ordem1 = ''
-ordem2 = ''
-ordem3 = ''
-
-for n in lseq:
-    if  len(n) > len(ordem3):
-        ordem3 = n
+if len(SeqA)>len(SeqB) and len(SeqA)>len(SeqC):
+    print('SeqA')
+    if len(SeqB)>(SeqC):
+        print('SeqB')
+        print('SeqC')
+    else:
+        print('SeqC')
+        print('SeqB')
+elif len(SeqB)>len(SeqA) and len(SeqB)>len(SeqC):
+    print('SeqB')
+    if len(SeqA)>(SeqC):
+        print('SeqA')
+        print('SeqC')
+    else:
+        print('SeqC')
+        print('SeqA')
+elif len(SeqC)>len(SeqA) and len(SeqC)>len(SeqB):
+    print('SeqC')
+    if len(SeqC)>(SeqB):
+        print('SeqC')
+        print('SeqB')
+    else:
+        print('SeqB')
+        print('SeqC')
+else:
+    print('Deu ruim chapa.')
     
-    if len(n) > len(ordem2):
-        ordem2 = n
-    
-    if len(n) > len(ordem1):
-        ordem1 = n
-
-
-print(f'Sequênciais em ordem de tamanho:\n{ordem1} \n{ordem2} \n{ordem3}')
-
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

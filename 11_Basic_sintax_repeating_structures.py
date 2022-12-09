@@ -64,8 +64,9 @@ for q in range(1,101):
 #Exercício 5
 print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
 
+print('Números primos: ')
+
 for q in range(1,1001):
-    print(f'Número {q}. Divisores:', end= ' ')
     qlist = []
     for w in range(1,q+1):
         if q%w==0:
@@ -74,10 +75,8 @@ for q in range(1,1001):
             print('', end='')
 
     if len(qlist) == 2:
-        print(qlist)
+        print(f' <<< {q} >>> {qlist}')
     else:
         print('', end= '')
-        
-    print('')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

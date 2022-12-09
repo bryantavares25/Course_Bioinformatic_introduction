@@ -52,15 +52,32 @@ print('')
 #Exercício 4
 print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
 
-#Escreva um programa em Python que calcule e imprima todos os divisores dos números entre 1 e 100.
-
 for q in range(1,101):
     print(f'Número {q}. Divisores:', end= ' ')
-    for w in range(1,q):
+    for w in range(1,q+1):
         if q%w==0:
             print(f'{w}', end=' ')
         else:
             print('', end='')
+    print('')
+
+#Exercício 5
+print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
+
+for q in range(1,1001):
+    print(f'Número {q}. Divisores:', end= ' ')
+    qlist = []
+    for w in range(1,q+1):
+        if q%w==0:
+            qlist.append(w)
+        else:
+            print('', end='')
+
+    if len(qlist) == 2:
+        print(qlist)
+    else:
+        print('', end= '')
+        
     print('')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

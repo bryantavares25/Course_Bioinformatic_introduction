@@ -36,4 +36,19 @@ while mun < 11:
 
 print('')
 
+#Exercício 3
+print('\n', '-'*15, 'Exercício 3', '-'*15, '\n')
+
+sedna = 'TATTAACCGGGTTTAAACTAGCATGCATGATTAACCAGTACATCTTTT'
+
+for i in sedna:
+    if i == 'A' or i == 'T' or i == 'C' or i == 'G':
+        print('DNA', end=' ')
+    else:
+        print('Não DNA')
+
+print('')
+
+print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
+
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

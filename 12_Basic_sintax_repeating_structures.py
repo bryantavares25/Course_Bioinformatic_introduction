@@ -19,24 +19,39 @@ seqlist = ['ATCDLASKWNWNHTLCAAHCIARRYRGGYCNSKAVCVCRN', 'TATTAACCGGGTTTAAACTAGCAT
 
 # Estrutura de repetição para cada item da lista
 for i in range(0,len(seqlist)):
-    print(seqlist[i])
+    erro = []
 
     # Estrutura de repetição para cada item do texto
     for o in seqlist[i]:
+        
         # Teste DNA
         ehDNA = True
-        erro = []
+        
         if (not o in DNA):
             ehDNA = False
             erro.append(o)
-        print(f'Letra {o}: {ehDNA} {erro}')
+        
         # Teste RNA
         ehRNA = True
-        erro = []
+
+        if (not o in RNA):
+            ehRNA = False
+            erro.append(o)
+
         # Teste Proteína
+        ehProteina = True
 
+        if (not o in PROTEINA):
+            ehProteina = False
+            erro.append(o)
 
-print('FIM')
-
+    if ehDNA:
+        print(f'{seqlist[i]}\n > > > Sequência de DNA.')
+    elif ehRNA:
+        print(f'{seqlist[i]}\n > > > Sequência de RNA.')
+    else:
+        print(f'{seqlist[i]}\n > > > Sequência de Proteína.')
+    
+    print(erro)
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

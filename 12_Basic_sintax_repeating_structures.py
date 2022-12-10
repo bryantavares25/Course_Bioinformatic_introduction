@@ -62,4 +62,23 @@ print('\n', '-'*15, 'Exercício 3', '-'*15, '\n')
 
 dnaseq =   'TATTAACCGGGTTTAAACTAGCATGCATGATTAACCAGTACATCTTTT'
 
+dnacom = []
+
+for p in dnaseq:    
+    if p == 'A':
+        dnacom.append('T')
+    elif p == 'T':
+        dnacom.append('A')
+    elif p == 'C':
+        dnacom.append('G')
+    elif p == 'G': 
+        dnacom.append('C')
+
+print(dnacom)
+
+for a in dnacom:
+    dnastr = dnastr+a
+
+print(dnastr)
+
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

@@ -108,4 +108,15 @@ print(micseq[maiorind], maiortam)
 #Exercício 8
 print('\n', '-'*15, 'Exercício 8', '-'*15, '\n')
 
+numlist = [1,4,6,3,4,5,7,8,9,5,6,7,4,3,5,6,7,8]
+
+soma = 0
+nterms =0
+
+for i in range(0,len(numlist)):
+    soma = soma + i
+    nterms = nterms +1
+
+print(f'A média dos termos {numlist} é {soma/nterms}')
+
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

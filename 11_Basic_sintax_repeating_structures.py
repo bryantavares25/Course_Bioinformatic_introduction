@@ -84,6 +84,25 @@ print('\n', '-'*15, 'Exercício 6', '-'*15, '\n')
 
 seqref = 'VRSSSRTPSDKPVAAAAHVVANPQAEGQLQWLNRRANALLANGVELRDNQLVVPSEGLYLIYSQVLAAAFKGQGCPSTHVLLTHTISRIAVSYQTKVNLLSAIKAAASPCQRETPEGAEAKPWYEPIYLGGVFQLEKGDRLSAAAAEINRPDYLLFAESGQVYFGIIAL'
 
+for i in range(0, len(seqref)):
+    if seqref[i:i+3] == 'AAA':
+        print('AAA em', i)
 
+#Exercício 7
+print('\n', '-'*15, 'Exercício 7', '-'*15, '\n')
+
+micseq = ['KTCENLA', 'DTFR', 'GPCFTDGSC', 'DDHCKNKEHLIK', 'GRCRDDFRC', 'WCTRNC', 'ATC']
+
+print(f'Sequências: {micseq}. Dentre estas a maior é: {max(micseq)}')
+
+maiortam = 0
+maiorind = 0
+
+for i in range(0, len(micseq)):
+    if len(micseq[i]) > maiortam:
+        maiortam = len(micseq[i])
+        maiorind = i
+
+print(micseq[maiorind], maiortam)
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

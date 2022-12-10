@@ -105,4 +105,7 @@ for i in range(0, len(micseq)):
 
 print(micseq[maiorind], maiortam)
 
+#Exercício 8
+print('\n', '-'*15, 'Exercício 8', '-'*15, '\n')
+
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

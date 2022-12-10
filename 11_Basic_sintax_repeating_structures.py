@@ -1,4 +1,4 @@
-#Atividade 10 - Sintaxe básica: Estruturas condicionais
+#Atividade 11 - Sintaxe básica: Estruturas de repetição
 
 #Exercício 1
 print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')
@@ -111,12 +111,10 @@ print('\n', '-'*15, 'Exercício 8', '-'*15, '\n')
 numlist = [1,4,6,3,4,5,7,8,9,5,6,7,4,3,5,6,7,8]
 
 soma = 0
-nterms =0
 
 for i in range(0,len(numlist)):
     soma = soma + i
-    nterms = nterms +1
 
-print(f'A média dos termos {numlist} é {soma/nterms}')
+print(f'A média dos termos {numlist} é {soma/len(numlist)}')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

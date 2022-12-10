@@ -58,27 +58,31 @@ for i in range(0,len(seqlist)):
 #Exercício 3
 print('\n', '-'*15, 'Exercício 3', '-'*15, '\n')
 
-#gere e imprima a sequência complemento reverso da seguinte sequência de DNA:
-
 dnaseq =   'TATTAACCGGGTTTAAACTAGCATGCATGATTAACCAGTACATCTTTT'
 
+dnalist = list(dnaseq)
+dnalist.reverse()
+
 dnacom = []
+dnastr = ''
 
-for p in dnaseq:    
-    if p == 'A':
+for p in range(0, len(dnalist)):
+    if dnalist[p] == 'A':
         dnacom.append('T')
-    elif p == 'T':
+    elif dnalist[p] == 'T':
         dnacom.append('A')
-    elif p == 'C':
+    elif dnalist[p] == 'C':
         dnacom.append('G')
-    elif p == 'G': 
+    elif dnalist[p] == 'G': 
         dnacom.append('C')
-
-print(dnacom)
 
 for a in dnacom:
     dnastr = dnastr+a
 
+print(dnaseq)
 print(dnastr)
+
+#Exercício 4
+print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

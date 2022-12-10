@@ -85,4 +85,21 @@ print(dnastr)
 #Exercício 4
 print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
 
+# Escreva um programa que calcule o fatorial de um número recebido como entrada.
+numfat = int(input('Número de entrada: '))
+
+fat = 1
+
+for n in range(1,numfat+1):
+    fat = fat*n
+    print(fat, end = ' ')
+
+print(f'\nO valor do fatorial de {numfat} é {fat}.')
+
+#Exercício 5
+print('\n', '-'*15, 'Exercício 5', '-'*15, '\n')
+
+
+
+
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

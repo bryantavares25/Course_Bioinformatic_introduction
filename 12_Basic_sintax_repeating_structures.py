@@ -58,4 +58,8 @@ for i in range(0,len(seqlist)):
 #Exercício 3
 print('\n', '-'*15, 'Exercício 3', '-'*15, '\n')
 
+#gere e imprima a sequência complemento reverso da seguinte sequência de DNA:
+
+dnaseq =   'TATTAACCGGGTTTAAACTAGCATGCATGATTAACCAGTACATCTTTT'
+
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

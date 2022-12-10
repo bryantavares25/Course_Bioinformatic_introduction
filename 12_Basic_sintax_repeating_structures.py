@@ -15,7 +15,7 @@ RNA = {'U', 'C', 'A', 'G'}
 PROTEINA = {'A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y'} 
 
 #Lista com sequências
-seqlist = ['ATCDLASKWNWNHTLCAAHCIARRYRGGYCNSKAVCVCRN', 'TATTAACCGGGTTTAAACTAGCATGCATGATTAACCAGTACATCTTTT', 'ATCBDLASKWXWNHTLCAAHCIARRYRGGYCNSJAVCVCRN']
+seqlist = ['ZZXMLXZZ', 'ATCDLASKWNWNHTLCAAHCIARRYRGGYCNSKAVCVCRN', 'TATTAACCGGGTTTAAACTAGCATGCATGATTAACCAGTACATCTTTT', 'ATCBDLASKWXWNHTLCAAHCIARRYRGGYCNSJAVCVCRN']
 
 # Estrutura de repetição para cada item da lista
 for i in range(0,len(seqlist)):
@@ -46,12 +46,16 @@ for i in range(0,len(seqlist)):
             erro.append(o)
 
     if ehDNA:
-        print(f'{seqlist[i]}\n > > > Sequência de DNA.')
+        print(f'{seqlist[i]} > > > Sequência de DNA.\n')
     elif ehRNA:
-        print(f'{seqlist[i]}\n > > > Sequência de RNA.')
+        print(f'{seqlist[i]} > > > Sequência de RNA.\n')
+    elif ehProteina:
+        print(f'{seqlist[i]} > > > Sequência de Proteína.\n')
     else:
-        print(f'{seqlist[i]}\n > > > Sequência de Proteína.')
-    
-    print(erro)
+        errouni = set(erro)
+        print(f'{seqlist[i]} > > > Não é nenhum tipo de molécula biológica. ERRO: {errouni}.\n')
+
+#Exercício 3
+print('\n', '-'*15, 'Exercício 3', '-'*15, '\n')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

@@ -86,8 +86,8 @@ print(dnastr)
 print('\n', '-'*15, 'Exercício 4', '-'*15, '\n')
 
 # Escreva um programa que calcule o fatorial de um número recebido como entrada.
-numfat = int(input('Número de entrada: '))
-
+#numfat = int(input('Número de entrada: '))
+numfat = 5
 fat = 1
 
 for n in range(1,numfat+1):
@@ -123,14 +123,17 @@ print(f'A proteína {prot} de tamanho {len(prot)} tem massa molar de {massamolar
 #Exercício 7
 print('\n', '-'*15, 'Exercício 7', '-'*15, '\n')
 
-#Considerando a Tabela 2 que contem dados de defensinas de plantas, obtenha / calcule e imprima:
-#A) a menor sequência e seu comprimento
+# A) a menor sequência e seu comprimento
 # B) a maior sequência e seu comprimento
 # C) a média entre os comprimentos das sequências
 # D) a mediana entre os comprimentos das sequências
 
 ref = ['Entry ID', 'Entity ID', 'Chain ID', 'Database Name', 'Accession Code(s)', 'Sequence', 'Chain Length', 'Entity Macromolecule Type', 'Molecular Weight (Entity)']
 table = [['3PSM', 1 , 'A,B', 'UniProt', 'Q6B519', 'KTCENLADTFRGPCFTDGSCDDHCKNKEHLIKGRCRDDFRCWCTRNC', 47, 'polypeptide(L)', 5.511], ['2NY9', 1 , 'X', 'UniProt', 'Q17027', 'ATCDLASGFGVGSSLCAAHCLVKGYRGGYCKNKICHCRDKF', 41, 'polypeptide(L)', 4.349], ['2NY8', 1 , 'X', 'UniProt', 'Q17027', 'ATCDLASGFGVGSSLCAAHCIARRYRGGYCNSKAVCVCRN', 40, 'polypeptide(L)', 4.148], ['2NZ3', 1 , 'A', 'UniProt', 'Q17027', 'ATCDLASIFNVNHALCAAHCIARRYRGGYCNSKAVCVCRN', 40, 'polypeptide(L)', 4.353], ['2E3G', 1 , 'A', 'UniProt', 'Q17027', 'ATCDLASKWNWNHTLCAAHCIARRYRGGYCNSKAVCVCRN', 40, 'polypeptide(L)', 4.525], ['2E3F', 1 , 'A', 'UniProt', 'Q17027', 'ATCDLASFSSQWVTPNDSLCAAHCIARRYRGGYCNGKRVCVCR', 43, 'polypeptide(L)', 4.747], ['2E3E', 1 , 'A', 'UniProt', 'Q17027', 'ATCDLASFSSQWVTPNDSLCAAHCLVKGYRGGYCKNKICHCRDKF', 45, 'polypeptide(L)', 5.007]]
+
+
+print(table[0][8])
+
 
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

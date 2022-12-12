@@ -123,8 +123,7 @@ print(f'A proteína {prot} de tamanho {len(prot)} tem massa molar de {massamolar
 #Exercício 7
 print('\n', '-'*15, 'Exercício 7', '-'*15, '\n')
 
-ref = ['Entry ID', 'Entity ID', 'Chain ID', 'Database Name', 'Accession Code(s)', 'Sequence', 'Chain Length', 'Entity Macromolecule Type', 'Molecular Weight (Entity)']
-table = [['3PSM', 1 , 'A,B', 'UniProt', 'Q6B519', 'KTCENLADTFRGPCFTDGSCDDHCKNKEHLIKGRCRDDFRCWCTRNC', 47, 'polypeptide(L)', 5.511], ['2NY9', 1 , 'X', 'UniProt', 'Q17027', 'ATCDLASGFGVGSSLCAAHCLVKGYRGGYCKNKICHCRDKF', 41, 'polypeptide(L)', 4.349], ['2NY8', 1 , 'X', 'UniProt', 'Q17027', 'ATCDLASGFGVGSSLCAAHCIARRYRGGYCNSKAVCVCRN', 40, 'polypeptide(L)', 4.148], ['2NZ3', 1 , 'A', 'UniProt', 'Q17027', 'ATCDLASIFNVNHALCAAHCIARRYRGGYCNSKAVCVCRN', 40, 'polypeptide(L)', 4.353], ['2E3G', 1 , 'A', 'UniProt', 'Q17027', 'ATCDLASKWNWNHTLCAAHCIARRYRGGYCNSKAVCVCRN', 40, 'polypeptide(L)', 4.525], ['2E3F', 1 , 'A', 'UniProt', 'Q17027', 'ATCDLASFSSQWVTPNDSLCAAHCIARRYRGGYCNGKRVCVCR', 43, 'polypeptide(L)', 4.747], ['2E3E', 1 , 'A', 'UniProt', 'Q17027', 'ATCDLASFSSQWVTPNDSLCAAHCLVKGYRGGYCKNKICHCRDKF', 45, 'polypeptide(L)', 5.007]]
+table = [['3PSM', 'KTCENLADTFRGPCFTDGSCDDHCKNKEHLIKGRCRDDFRCWCTRNC', 5.511], ['2NY9', 'ATCDLASGFGVGSSLCAAHCLVKGYRGGYCKNKICHCRDKF', 4.349], ['2NY8', 'ATCDLASGFGVGSSLCAAHCIARRYRGGYCNSKAVCVCRN', 4.148], ['2NZ3', 'ATCDLASIFNVNHALCAAHCIARRYRGGYCNSKAVCVCRN', 4.353], ['2E3G', 'ATCDLASKWNWNHTLCAAHCIARRYRGGYCNSKAVCVCRN', 4.525], ['2E3F', 'ATCDLASFSSQWVTPNDSLCAAHCIARRYRGGYCNGKRVCVCR', 4.747], ['2E3E', 'ATCDLASFSSQWVTPNDSLCAAHCLVKGYRGGYCKNKICHCRDKF', 5.007]]
 
 print(table)
 
@@ -132,8 +131,8 @@ min = 10000
 minprot = 0
 
 for n in range(0, len(table)):
-    if table[n][8] < min:
-        min = table[n][8]
+    if table[n][2] < min:
+        min = table[n][2]
         minprot = n
 
 print(f'Dentre as sequências, a menor sequência é {table[minprot]} de tamanho de {min}.')
@@ -142,8 +141,8 @@ max = 0
 maxprot = 0
 
 for m in range(0, len(table)):
-    if table[m][8] > max:
-        max = table[m][8]
+    if table[m][2] > max:
+        max = table[m][2]
         maxprot = m
 
 print(f'Dentre as sequências, a maior sequência é {table[maxprot]} de tamanho de {max}.')
@@ -152,7 +151,7 @@ somat = 0
 quant = 0
 
 for k in range(0, len(table)):
-    somat = somat+table[k][8]
+    somat = somat+table[k][2]
     quant = quant+1
 
 med = somat/quant
@@ -163,8 +162,8 @@ somat = 0
 quant = 0
 
 for f in range(0, len(table)):
-    if table[f][8] != max and table[f][8] != min:
-        somat = somat+table[f][8]
+    if table[f][2] != max and table[f][2] != min:
+        somat = somat+table[f][2]
         quant = quant+1
 
 mediana = somat/quant
@@ -175,13 +174,26 @@ print(f'A mediana das sequências é {mediana}.')
 print('\n', '-'*15, 'Exercício 8', '-'*15, '\n')
 
 #Conceito de fingerprint: The molecular fingerprint is a way to describe a molecular structure that can convert a molecular structure into a bit string.
-#Fórmula Distância de Tanimoto: D = (A ^ B) / (A v B) 
+#Fórmula Distância de Tanimoto: D = (A ^ B) / (A v B)   ------   D = (A and B) / (A or B)
 
 fpm1 = [0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1]
 fpm2 = [0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0]
 
+mais = []
 
+for h in range(0,len(fpm1)):
+    n = fpm1[h] and fpm2[h]
+    mais.append(n)
 
+print(mais)
+
+menos = []
+
+for j in range(0,len(fpm1)):
+    n = fpm1[j] or fpm2[j]
+    menos.append(n)
+
+print(menos)
 
 
 

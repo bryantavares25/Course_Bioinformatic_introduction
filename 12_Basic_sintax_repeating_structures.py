@@ -174,6 +174,15 @@ print(f'A mediana das sequências é {mediana}.')
 #Exercício 8
 print('\n', '-'*15, 'Exercício 8', '-'*15, '\n')
 
+#Conceito de fingerprint: The molecular fingerprint is a way to describe a molecular structure that can convert a molecular structure into a bit string.
+#Fórmula Distância de Tanimoto: D = (A ^ B) / (A v B) 
+
+fpm1 = [0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1]
+fpm2 = [0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0]
+
+
+
+
 
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

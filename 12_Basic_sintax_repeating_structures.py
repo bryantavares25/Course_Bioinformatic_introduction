@@ -187,6 +187,11 @@ for h in range(0,len(fpm1)):
 
 print(mais)
 
+s1 = 0
+
+for g in mais:
+    s1 = s1+g
+
 menos = []
 
 for j in range(0,len(fpm1)):
@@ -195,6 +200,11 @@ for j in range(0,len(fpm1)):
 
 print(menos)
 
+s2 = 0
 
+for g in menos:
+    s2 = s2+g
+
+print(f'A distância de Tanimoto entre {fpm1} e {fpm2} é:\n{s1/s2}')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

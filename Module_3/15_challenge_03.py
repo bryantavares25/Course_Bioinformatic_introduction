@@ -20,6 +20,7 @@ def pesbi(reg, lis):
             dir = meio-1
         
         meio = int((esq+dir)/2)
+        print(meio)
 
     if reg == lis[meio]:
         return meio
@@ -29,6 +30,6 @@ def pesbi(reg, lis):
 seqcres = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 j = pesbi(9,seqcres)
 
-print(j)
+print(seqcres, j)
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

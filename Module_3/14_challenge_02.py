@@ -14,12 +14,17 @@ def sear(reg, lis):
 out = sear('ABE', trm)
 print(out)
 
-#Desafio
-#1. Esse algoritmo é ótimo?
-#2. Se não, como ele poderia ser melhorado?
-#3. Tente implementar melhorias e demonstrar através da nova função de complexidade
-#que ele é mais eficiente
+def pqord(reg, lis):
+    i = 0
+    while i < len(lis) and reg >= lis[i]:
+        if lis[i] == reg:
+            return i
+        i=i+1
+    return -1
 
+seqcres = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+ord = pqord(7, seqcres)
+print(ord)
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

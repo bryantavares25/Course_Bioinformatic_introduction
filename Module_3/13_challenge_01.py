@@ -39,6 +39,8 @@ print('\n', '-'*15, 'Desafio 4', '-'*15, '\n')
 
 def mame4(b):
     
+    b = list(b) 
+
     if (len(b)%2 == 1):
         b.append(b[0])
 
@@ -67,7 +69,7 @@ def mame4(b):
     s = (m, M)
     return s
 
-inplist = [7, 1, 2, 8 , 3, 5, 9]
+inplist = [7, 1, 2, 8 , 3, 5, 4, 9]
 
 print(f'A partir da lista: {inplist}. O elemento de menor valor e maior valor são, respectivamente: {mame4(inplist)}.')
 

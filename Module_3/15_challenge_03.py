@@ -25,9 +25,9 @@ def pesbi(reg, lis):
         return meio
     else:
         return -1
-        
-seqcres = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-j = pesbi(2,seqcres)
+
+seqcres = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+j = pesbi(9,seqcres)
 
 print(j)
 

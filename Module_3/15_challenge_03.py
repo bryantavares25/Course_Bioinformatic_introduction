@@ -11,17 +11,21 @@ def pesbi(reg, lis):
     esq = 0
     dir = len(lis)-1
 
-    meio = len(lis)//2
-
-    i = int((esq+dir)/2)
+    meio = int((esq+dir)/2)
     
-    while esq<= dir and reg != lis[i]:
-        if lis[meio] > reg:
-            meio = (lis[meio]//2)+lis[meio]
+    while esq <= dir and reg != lis[meio]:
+        if reg > lis[meio]:
+            esq = meio+1
         else:
-            meio = lis[meio]//2
-    return (reg, meio)
+            dir = meio-1
+        
+        meio = int((esq+dir)/2)
 
+    if reg == lis[meio]:
+        return meio
+    else:
+        return -1
+        
 seqcres = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 j = pesbi(2,seqcres)
 

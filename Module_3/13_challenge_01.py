@@ -37,19 +37,38 @@ print(f'A partir da lista: {inplist}. O elemento de menor valor e maior valor s�
 #Dasafio 4
 print('\n', '-'*15, 'Desafio 4', '-'*15, '\n')
 
-def mame(b):
-    M = m = b[0]
+def mame4(b):
+    
+    if (len(b)%2 == 1):
+        b.append(b[0])
 
-    for l in b:
-        if l < m:
-            m = l
-        elif l > M:
-            M = l
+    if (b[0] < b[1]):
+        m = b[0]
+        M = b[1]
+    else:
+        m = b[1]
+        M = b[0]
 
-    return m, M
+    i = 2
+    while (i < len(b)):
+        if b[i] > b[i+1]:
+            if b[i] > M:
+                M = b[1]
+            if b[i+1] < m:
+                m = b[i+1]
+        else:
+            if b[i+1] > M:
+                M = b[i+1]
+            if b[i] < m:
+                m = b[i]
+
+        i = i+2
+
+    s = (m, M)
+    return s
 
 inplist = [7, 1, 2, 8 , 3, 5, 9]
 
-print(f'A partir da lista: {inplist}. O elemento de menor valor e maior valor são, respectivamente: {mame(inplist)}')
+print(f'A partir da lista: {inplist}. O elemento de menor valor e maior valor são, respectivamente: {mame4(inplist)}.')
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

@@ -11,5 +11,12 @@ print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')
 
 inplist = []
 
+def maior(list):
+    k = 0
+    for i in inplist:
+        if i > k:
+            k = i
+
+
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

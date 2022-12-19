@@ -3,9 +3,9 @@
 #Dasafio 4
 print('\n', '-'*15, 'Desafio 4', '-'*15, '\n')
 
-#Distância de Hamming
+# Distância de Hamming
 def dham(seq1, seq2):
-    #Distância de Hamming entre duas cadeias de caracteres de mesmo comprimento é o número de posições nas quais elas diferem entre si
+    #Distância entre duas cadeias de caracteres de mesmo comprimento é o número de posições nas quais elas diferem entre si
 
     dis = sem = 0
 
@@ -17,7 +17,21 @@ def dham(seq1, seq2):
 
     return dis
 
-#def dlev(): #2. A distância de Levenshtein
+# Distância de Levenshtein
+def dlev(seq1, seq2): #2. A distância de Levenshtein
+    #Distância entre duas sequências é o número mínimo de edições dos seguintes tipos que são necessárias para transformar uma sequência na outra (Inserção/Deleção/Substituição)  
+
+    dis = sem = 0
+
+    for let in range(0, len(seq1)):
+        if seq1[let] == seq2[let]:
+            sem = sem + 1
+        else:
+            
+            dis = dis+1
+
+    return dis
+
 
 ss = 'AAAAAAGATTTCACACAACACAG'
 aa = 'AAAAAAGTTTTCACACACAACCG'

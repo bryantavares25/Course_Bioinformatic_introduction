@@ -41,7 +41,7 @@ def max(s1, s2, c, l, d):
 
 def pon(s1, s2, c, l, d):
     if (s1 == s2 and (d+1) >= c and d+1 >= l):
-        return 'x'
+        return '\.'
     elif (l >= c and l >= d):
         return '_'
     else:

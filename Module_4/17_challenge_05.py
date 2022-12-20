@@ -47,8 +47,24 @@ def pon(s1, s2, c, l, d):
     else:
         return '|'
 
+def impmatriz(v, w, pontuacao, ponteiros):
+
+    print('t', end='')
+    for j in range(0, len(v)):
+        print(v[j], end='t')
+    
+    print()
+    for i in range(0, len(w)):
+        print(w[i], end='t')
+        for j in range(0, len(v)):
+            print(pontuacao[i][j], ponteiros[i][j], end='t', sep='')
+        print()
+    print()
+
+
 seq1 = ['*','A', 'A', 'C', 'G', 'T', 'T', 'A', 'T', 'G']
 seq2 = ['*', 'A', 'C', 'C', 'G', 'T', 'T', 'G', 'T', 'G']
+
 
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

@@ -1,4 +1,4 @@
-#Atividade 17 - Desafios: Agoritmos de Bioinformatica
+#Atividade 18 - Desafios: Agoritmos de Bioinformatica
 
 #Dasafio 6
 print('\n', '-'*15, 'Desafio 6', '-'*15, '\n')

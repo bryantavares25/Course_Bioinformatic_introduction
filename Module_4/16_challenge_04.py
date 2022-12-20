@@ -26,6 +26,8 @@ def dlev(seq1, seq2): #2. A distância de Levenshtein
     for let in range(0, len(seq1)):
         if seq1[let] == seq2[let]:
             sem = sem + 1
+        elif seq1[seq1+1] == seq2[let]:
+            seq1
         else:
             dis = dis+1
 

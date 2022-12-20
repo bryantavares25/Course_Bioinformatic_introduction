@@ -1,7 +1,7 @@
 #Atividade 17 - Desafios: Agoritmos de Bioinformatica
 
-#Dasafio 5
-print('\n', '-'*15, 'Desafio 5', '-'*15, '\n')
+#Dasafio 6
+print('\n', '-'*15, 'Desafio 6', '-'*15, '\n')
 
 def lcs(v, w):
     pontuacao = []

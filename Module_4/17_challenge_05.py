@@ -39,6 +39,14 @@ def max(s1, s2, c, l, d):
     else:
         return c
 
+def pon(s1, s2, c, l, d):
+    if (s1 == s2 and (d+1) >= c and d+1 >= l):
+        return 'x'
+    elif (l >= c and l >= d):
+        return '_'
+    else:
+        return '|'
+
 seq1 = ['*','A', 'A', 'C', 'G', 'T', 'T', 'A', 'T', 'G']
 seq2 = ['*', 'A', 'C', 'C', 'G', 'T', 'T', 'G', 'T', 'G']
 

@@ -29,11 +29,12 @@ def lcs(v, w):
     impmatriz(v, w, pontuacao, ponteiros)
     alinhafin(v, w, pontuacao, ponteiros)
 
+# Pensando modificações para levar em conta matrizes de substituição
 def max(s1, s2, c, l, d, mat, mis, indel):
     if (s1 == s2 and (d+mat) >= c and d+mat >= l):
         d = d+mat
         return d
-    if (s1 != s2 and (d+mis) >= c and d+mis >= l):
+    elif (s1 != s2 and (d+mis) >= c and d+mis >= l):
         d = d+mis
         return d
     elif (l >= c and l >= d):

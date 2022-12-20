@@ -3,7 +3,6 @@
 #Dasafio 5
 print('\n', '-'*15, 'Desafio 5', '-'*15, '\n')
 
-
 def lcs(v, w):
     pontuacao = []
     ponteiros = []
@@ -49,18 +48,43 @@ def pon(s1, s2, c, l, d):
 
 def impmatriz(v, w, pontuacao, ponteiros):
 
-    print('t', end='')
+    print('\t', end='')
     for j in range(0, len(v)):
-        print(v[j], end='t')
+        print(v[j], end='\t')
     
     print()
     for i in range(0, len(w)):
-        print(w[i], end='t')
+        print(w[i], end='\t')
         for j in range(0, len(v)):
             print(pontuacao[i][j], ponteiros[i][j], end='t', sep='')
         print()
     print()
 
+def alinhafin(v, w, pontuacao, ponteiros):
+    v_alinha = ''
+    w_alinha = ''
+
+    i = len(w)-1
+    j = len(v)-1
+
+    while ((i!=0) or (j!=0)):
+        if (ponteiros[i][j] == '\x'):
+            v_alinha = v[j] + v_alinha
+            w_alinha = w[i] + w_alinha
+            i = i-1
+            j = j-1
+        elif (ponteiros[i][j]=='_'):
+            v_alinha = v[j] +v_alinha
+            w_alinha = w[j] +w_alinha
+            j = j-1
+        else:
+            v_alinha = '' + v_alinha
+            w_alinha = w[i] + w_alinha
+            i = i-1
+        
+        print(pontuacao[len(w)-1][len(v)-1])
+        print(v_alinha)
+        print(w_alinha)
 
 seq1 = ['*','A', 'A', 'C', 'G', 'T', 'T', 'A', 'T', 'G']
 seq2 = ['*', 'A', 'C', 'C', 'G', 'T', 'T', 'G', 'T', 'G']

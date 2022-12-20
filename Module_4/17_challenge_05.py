@@ -26,8 +26,8 @@ def lcs(v, w):
             pontuacao[i][j] = max(v[j], w[i], pontuacao[i-1][j], pontuacao[i][j-1], pontuacao[i-1][j-1])
             ponteiros[i][j] = pon(v[j], w[i], pontuacao[i-1][j], pontuacao[i][j-1], pontuacao[i-1][j-1])
 
-    impmatriz =
-    alinhafin =
+    impmatriz(v, w, pontuacao, ponteiros)
+    alinhafin(v, w, pontuacao, ponteiros)
 
 def max(s1, s2, c, l, d):
     if (s1 == s2 and (d+1) >= c and d+1 >= l):
@@ -40,7 +40,7 @@ def max(s1, s2, c, l, d):
 
 def pon(s1, s2, c, l, d):
     if (s1 == s2 and (d+1) >= c and d+1 >= l):
-        return '\.'
+        return '\\'
     elif (l >= c and l >= d):
         return '_'
     else:
@@ -56,7 +56,7 @@ def impmatriz(v, w, pontuacao, ponteiros):
     for i in range(0, len(w)):
         print(w[i], end='\t')
         for j in range(0, len(v)):
-            print(pontuacao[i][j], ponteiros[i][j], end='t', sep='')
+            print(pontuacao[i][j], ponteiros[i][j], end='\t', sep='')
         print()
     print()
 
@@ -68,27 +68,28 @@ def alinhafin(v, w, pontuacao, ponteiros):
     j = len(v)-1
 
     while ((i!=0) or (j!=0)):
-        if (ponteiros[i][j] == '\x'):
-            v_alinha = v[j] + v_alinha
-            w_alinha = w[i] + w_alinha
+        if (ponteiros[i][j] == '\\'):
+            v_alinha = v[j]+ v_alinha
+            w_alinha = w[i]+ w_alinha
             i = i-1
             j = j-1
         elif (ponteiros[i][j]=='_'):
-            v_alinha = v[j] +v_alinha
-            w_alinha = w[j] +w_alinha
+            v_alinha = v[j]+v_alinha
+            w_alinha = '_'+w_alinha
             j = j-1
         else:
-            v_alinha = '' + v_alinha
-            w_alinha = w[i] + w_alinha
+            v_alinha = '_'+ v_alinha    
+            w_alinha = w[i]+ w_alinha
             i = i-1
-        
-        print(pontuacao[len(w)-1][len(v)-1])
-        print(v_alinha)
-        print(w_alinha)
+
+    print(pontuacao[len(w)-1][len(v)-1])
+    print(v_alinha)
+    print(w_alinha)
 
 seq1 = ['*','A', 'A', 'C', 'G', 'T', 'T', 'A', 'T', 'G']
 seq2 = ['*', 'A', 'C', 'C', 'G', 'T', 'T', 'G', 'T', 'G']
 
+lcs(seq1, seq2)
 
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <

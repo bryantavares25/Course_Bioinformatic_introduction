@@ -1,9 +1,25 @@
 #Atividade 19 - Biologia estrutural
 
-#Exercício 1
-print('\n', '-'*15, 'Exercício 1', '-'*15, '\n')
+# # # DESAFIO REGENERA # # # Resolução Bryan Tavares
 
-#Baixar um arquivo do Protein Data Bank e recuperar dados
+# Recuperação de sequência de proteases de Pseudoalteromonas phenolica
 
+from Bio import SeqIO
+
+# entrada = "genoma.fasta"
+# saida = "sequencias_recuperadas.fasta"
+
+fasta_file = "teste_01.fasta"
+
+with open(fasta_file, "r") as handle:
+    for record in SeqIO.parse(handle, "fasta"):
+        print("ID:", record.id)
+        print("Descrição:", record.description)
+        print("Sequência:", record.seq)
+        print("---")
+
+
+
+# # # B. A. R. T. # # # Resolução Bryan Tavares
 
 # B. A. R. T. > < ( ( (º > Rm 11:36 < º ) ) ) > <
